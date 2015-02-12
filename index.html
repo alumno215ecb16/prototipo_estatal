@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Educatáctil</title>
+<link href="jquery-mobile/tema01.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/juegos.js" type="text/javascript"></script>
+<style>
+#cuadro_opcion1 {
+	width:90px;
+	height:50px;
+	background-color:white;
+	border-style:solid;
+	border-color:blue;
+	font-size:1em;
+	text-align:center;
+}
+#cuadro_opcion2 {
+	width:90px;
+	height:50px;
+	background-color:white;
+	border-style:solid;
+	border-color:blue;
+	font-size:1em;
+	text-align:center;
+}
+#cuadro_opcion3 {
+	width:90px;
+	height:50px;
+	background-color:white;
+	border-style:solid;
+	border-color:blue;
+	font-size:1em;
+	text-align:center;
+}
+#cuadro_opcion4 {
+	width:90px;
+	height:50px;
+	background-color:white;
+	border-style:solid;
+	border-color:blue;
+	font-size:1em;
+	text-align:center;
+}
+#cuadro_opcion5 {
+	width:90px;
+	height:50px;
+	background-color:white;
+	border-style:solid;
+	border-color:blue;
+	font-size:1em;
+	text-align:center;
+}
+#cuadro_opcion6 {
+	width:90px;
+	height:50px;
+	background-color:white;
+	border-style:solid;
+	border-color:blue;
+	font-size:1em;
+	text-align:center;
+}
+#cuadro_respuesta1 {
+	width:90px;
+	height:50px;
+	background-color:white;
+	border-style:solid;
+	border-color:blue;
+	font-size:1em;
+	text-align:center;
+}
+#cuadro_respuesta2 {
+	width:90px;
+	height:50px;
+	background-color:white;
+	border-style:solid;
+	border-color:blue;
+	font-size:1em;
+	text-align:center;
+}
+#cuadro_respuesta3 {
+	width:90px;
+	height:50px;
+	background-color:white;
+	border-style:solid;
+	border-color:blue;
+	font-size:1em;
+	text-align:center;
+}
+#cuadro_respuesta {
+	width:100%;
+	height:100%;
+	background-color:#FFB8A6;
+	border-style:solid;
+	border-color:blue;
+	font-size:1.5em;
+}
+#cuadro_instrucciones {
+	width:100%;
+	height:100%;
+	background-color:white;
+	border-style:groove;
+	border-color:#C50A0E;
+	font-size:1.3em;	
+}
+#cuadro_solucion {
+	width: 300px;
+	height: 50px;
+	background-color:#84FFAC;
+	border-style:dashed;
+	font-size: 1.2em;
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<div data-role="page" id="Principal" data-theme="a">
+	<div data-role="header" data-theme="a">
+    <h1>Educatáctil</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    <div>
+    <img src="imagenes/educatactil.png" width="100%" height="100%">
+    </div>
+    <br>
+    <div>
+    <ul data-role="listview">
+       <li><a href="#inicio">INICIO</a></li>
+       <li><a href="#acerca">ACERCA DE</a></li>
+    </ul>
+    </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="acerca" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-theme="a">
+    <h1>Educatáctil</h1>
+    </div>
+    <div data-role="content" align="center" data-theme="a">
+    	<p>EDUCATÁCTIL</p>
+       	Autores:
+        <br>
+        -Edher Eduardo Muñoz Mancera.
+        <br>
+        -Maria del Rosario Rodriguez Zamora.
+        <br>
+        <br>
+        Asesora:
+        <br>
+        -Erika Camacho Motolinia.
+        <br>
+        <br>
+        C.B.T.i.s. 16
+        <br>
+        2014-2015
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="inicio" align="center" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-theme="a">
+    <h1>Educatáctil</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    <h2>Elige una Asignatura</h2>
+    <ul data-role="listview">
+       <li><a href="#leoe">LEOE</a></li>
+       <li><a href="#algebra">ÁLGEBRA</a></li>
+       <li><a href="#quimica">QUÍMICA I</a></li>
+       <li><a href="#ingles">INGLES</a></li>
+       <li><a href="#tic">TIC</a></li>
+       <li><a href="#valores">LÓGICA</a></li>
+    </ul>
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="leoe" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-theme="a">
+    <h1>Instrucciones</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    <div id="cuadro_instrucciones" align="center">
+    Próximamente...
+    </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="algebra" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-theme="a">
+    <h1>Instrucciones</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+        <div id="cuadro_instrucciones">
+    	<h2 align="center">TRINOMIO CUADRADO PERFECTO</h1>
+        <h4 align="center">Convierte el binomio en un trinomio cuadrado perfecto</h3>
+       	Para crear un binomio presiona el botón "NUEVO".
+        Hay 3 cuadros vacios, que pertenecen a cada uno de los elementos del trinomio
+        respectivamente, los cuales se van a llenar con las opciones que se presentan abajo.
+        -Las de la izquierda afectan al cuadro de la izquierda.
+        -Las de en medio al cuadro de en medio.
+        -Las de la derecha al cuadro de la derecha.
+        Al terminar hay que tocar el botón "COMPROBAR" y se te mostrara un mensaje según
+        cuantos aciertos tuviste.
+        Si quieres probar otro binomio solo hay que volver a presionar el botón "NUEVO"
+    	</div>
+        <a href="#juego_1"><button type="button">INICIAR</button></a>
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="quimica" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-theme="a">
+    <h1>Instrucciones</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    <div id="cuadro_instrucciones" align="center">
+    Próximamente...
+    </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="ingles" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-theme="a">
+    <h1>Instrucciones</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    <div id="cuadro_instrucciones" align="center">
+    Próximamente...
+    </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="tic" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-theme="a">
+    <h1>Instrucciones</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    <div id="cuadro_instrucciones" align="center">
+    Próximamente...
+    </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="valores" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-theme="a">
+    <h1>Instrucciones</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    <div id="cuadro_instrucciones" align="center">
+    Próximamente...
+    </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="juego_1" data-add-back-btn="true" data-theme="a" align="center">
+	<div data-role="header" data-theme="a">
+    <h1>Educatáctil</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    <h1>TRINOMIO CUADRADO PERFECTO</h1>
+ <div align="center">
+ <label id="correcto1" hidden="true"></label>
+ <label id="correcto2" hidden="true"></label>
+ <label id="correcto3" hidden="true"></label>
+ <button onClick="inicio()" >NUEVO</button>
+ <br>
+ <h2>
+ <label id="problema">()</label>
+ <sup><label id="super">2</label></sup>
+ </h2>
+</div>
+<div id="cuadro_respuesta" class = "ui-grid-b ui-responsive" align="center">
+<div class="ui-block-a">
+<textarea readonly id="cuadro_respuesta1"></textarea>
+</div>
+<div class="ui-block-b">
+<textarea readonly id="cuadro_respuesta2"></textarea>
+</div>
+<div class="ui-block-c">
+<textarea readonly id="cuadro_respuesta3"></textarea>
+</div>
+</div>
+<br>
+<div id="cuadro_instrucciones">
+<div class="ui-grid-b ui-responsive">
+<div class="ui-block-a">
+<textarea readonly id="cuadro_opcion1"></textarea>
+<button id="boton1" onClick="elegir(cuadro_opcion1, 1)" >Opción 1</button></div>
+<div class="ui-block-b">
+<textarea readonly id="cuadro_opcion2"></textarea>
+<button id="boton2" onClick="elegir(cuadro_opcion2, 2)" >Opción 2</button></div>
+<div class="ui-block-c">
+<textarea readonly id="cuadro_opcion3"></textarea>
+<button id="boton3" onClick="elegir(cuadro_opcion3, 3)" >Opción 3</button></div>
+</div>
+<div class="ui-grid-b ui-responsive">
+<div class="ui-block-a">
+<textarea readonly id="cuadro_opcion4"></textarea>
+<button id="boton1" onClick="elegir(cuadro_opcion4, 1)" >Opción 4</button></div>
+<div class="ui-block-b">
+<textarea readonly id="cuadro_opcion5"></textarea>
+<button id="boton2" onClick="elegir(cuadro_opcion5, 2)" >Opción 5</button></div>
+<div class="ui-block-c">
+<textarea readonly id="cuadro_opcion6"></textarea>
+<button id="boton3" onClick="elegir(cuadro_opcion6, 3)" >Opción 6</button></div>
+</div>
+</p>
+</div>
+<button id="comprobar"  onClick="comprobar()" >COMPROBAR</button>
+<br>
+<div id="cuadro_solucion">
+<label id="resultado"></label>
+<label id="felicitación"></label>
+</div>
+<p>
+</p>   
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="juego_2" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-theme="a">
+    <h1>Educatáctil</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+    </div>
+</div>
+
+
+<div data-role="page" id="juego_3" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-theme="a">
+    <h1>Educatáctil</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    
+    </div>
+    <div data-role="footer" align="center" data-theme="a">
+    <h4>Educatáctil</h4>
+    </div>
+</div>
+</body>
+</html>
